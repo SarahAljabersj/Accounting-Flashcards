@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounting Flashcards - By Sarah AlJaber</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Accounting Chart of Accounts</h1>
+            <p>Flashcards for learning accounting terms</p>
+        </header>
+        
+        <div class="category-filter" id="categoryFilter">
+            <!-- Categories will be added here dynamically -->
+        </div>
+        
+        <div class="flashcard-container">
+            <div class="flashcard" id="flashcard">
+                <div class="flashcard-category" id="cardCategory"></div>
+                <div class="flashcard-content">
+                    <div class="flashcard-front" id="cardFront">
+                        <h3>Term:</h3>
+                        <p id="termText"></p>
+                    </div>
+                    <div class="flashcard-back" id="cardBack">
+                        <h3>Definition:</h3>
+                        <p id="definitionText"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="prevBtn">Previous</button>
+            <div class="card-counter">
+                <span id="currentCard">1</span> of <span id="totalCards">0</span>
+                <button id="randomBtn">Random</button>
+                <button id="flipBtn">Flip</button>
+            </div>
+            <button id="nextBtn">Next</button>
+        </div>
+        
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        
+        <footer>
+            <p>With love by Sarah AlJaber</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
